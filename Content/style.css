@@ -1,0 +1,65 @@
+body {
+  background-image: linear-gradient(blue, #b4a7d6);
+  font-family: Lucida , cursive;
+
+}
+
+th, td {
+    text-align:center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Header Styles */
+header {
+  padding: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 50px;
+	overflow: hidden;
+	background-color: #b4a7d6;
+	display: table;
+	width: 100%;
+}
+
+nav li {
+	display: table-cell;
+	background-color: #b4a7d6;
+}
+
+/* Main Content Styles */
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #b4a7d6;
+  color: #000000;
+  padding: 7px 12px;
+  border: ridge;
+  cursor: pointer;
+}
+
+video {
+	display: block;
+	width: 420px;
+	height: 250px;
+}
+
+audio {
+	width: 98%;
+}
+
+footer {
+  background-color: #b4a7d6;
+  padding: 10px;
+  text-align: center;
+}

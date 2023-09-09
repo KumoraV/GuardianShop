@@ -1,0 +1,157 @@
+<!-- This is the employee page -->
+<html>
+<head>
+  <title>Employee Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+<!-- Header -->
+  <header>
+    <h1 style="text-align:center; font-size: 40px;">
+        Tivan's Collectors Museum
+        </h1>
+    <h1 style="text-align:center; font-size: 30px;">
+        Behind the Scenes:
+        </h1>
+  </header>
+<!-- Enter a new product -->
+  <h1>Enter a new product below</h1>
+  <form action="newProduct.php" method="post">
+    <table border="0">
+      <tr>
+        <td>Product ID</td>
+        <td><input type="text" name="P_ID" maxlength="5" size="5"></td>
+      </tr>
+      <tr>
+        <td>Category</td>
+        <td>
+          <select name="category">
+            <option value="Shirt">Shirt</option>
+            <option value="Gadget">Gadget</option>
+            <option value="Plush">Plush</option>
+            <option value="Poster">Poster</option>
+            <option value="Pin">Pin</option>
+            <option value="Figurine">Figurine</option>
+            <option value="Hat">Hat</option>
+            <option value="Kicks">Kicks</option>
+            <option value="Featured">Featured</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Character</td>
+        <td>
+          <select name="character">
+            <option value="Star-Lord">Star-Lord</option>
+            <option value="Gamora">Gamora</option>
+            <option value="Rocket">Rocket Raccoon</option>
+            <option value="Drax">Drax the Destroyer</option>
+            <option value="Groot">Groot</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Price (Without $)</td>
+        <td><input type="text" name="price" maxlength="10" size="10"></td>
+      </tr>     
+      <tr>
+        <td>Quantity</td>
+        <td><input type="text" name="quantity" maxlength="7" size="7"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Register"></td>
+      </tr>
+    </table>
+  </form>
+<!-- This form allows the employee to make new products.
+     The values gets sent to insertProduct.php -->
+       <h1>Increase product quantity below</h1>
+
+  <form action="insertProduct.php" method="post">
+    <table border="0">
+      <tr>
+        <td>Product ID</td>
+        <td><input type="text" name="P_ID" maxlength="5" size="5"></td>
+      </tr>
+      <tr>
+        <td>Quantity</td>
+        <td><input type="text" name="quantity" maxlength="7" size="7"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Register"></td>
+      </tr>
+    </table>
+  </form>
+  
+     <section>
+          <aside>
+        <h2>Product ID's:</h2>
+        <ol>
+          <li>Drax</li>
+          <p>- 00001 > Shirt = 34.00</p>
+          <p>- 00002 > Figurine = 29.99</p>
+          <p>- 00003 > Hat = 19.99</p>
+          <p>- 00004 > Sticker = 1.99</p>
+          <p>- 00005 > Pin = 5.99</p>
+          <p>- 00006 > Gadget = 19.99</p>
+          <p>- 00007 > Poster = 27.99</p>
+          <p>- 00008 > Kicks= 79.99</p>
+          <li>Gamora</li>
+          <p>- 00009 > Shirt = 33.99</p>
+          <p>- 00010 > Figurine = 29.99</p>
+          <p>- 00011 > Hat = 19.99</p>
+          <p>- 00012 > Sticker = 1.99</p>
+          <p>- 00013 > Pin = 5.00</p>
+          <p>- 00014 > Poster = 27.99</p>
+          <p>- 00015 > Kicks= 79.99</p>
+          <li>Groot</li>
+          <p>- 00016 > Shirt = 33.66</p>
+          <p>- 00017 > Figurine = 30.00</p>
+          <p>- 00018 > Hat = 20.00</p>
+          <p>- 00019 > Sticker = 1.99</p>
+          <p>- 00020 > Pin = 1.99</p>
+          <p>- 00021 > Gadget = 20.00</p>
+          <p>- 00022 > Poster = 27.99</p>
+          <p>- 00023 > Kicks= 79.99</p>
+          <li>Rocket</li>
+          <p>- 00024 > Shirt = 12.00</p>
+          <p>- 00025 > Figurine = 29.99</p>
+          <p>- 00026 > Hat = 19.99</p>
+          <p>- 00027 > Sticker = 1.99</p>
+          <p>- 00028 > Pin = 5.99</p>
+          <p>- 00029 > Gadget = 19.99</p>
+          <p>- 00030 > Poster = 27.99</p>
+          <p>- 00031 > Kicks= 79.99</p>
+          <li>Star-Lord</li>
+          <p>- 00032 > Shirt = 57.00</p>
+          <p>- 00033 > Figurine = 29.99</p>
+          <p>- 00034 > Hat = 19.99</p>
+          <p>- 00035 > Sticker = 1.99</p>
+          <p>- 00036 > Pin = 5.99</p>
+          <p>- 00037 > Gadget = 25.00</p>
+          <p>- 00038 > Poster = 27.99</p>
+          <p>- 00039 > Kicks= 79.99</p>
+          <li>Featured Products</li>
+          <p>- 00040 > Featured / Groot = 99.99</p>
+          <p>- 00041 > Featured / Gamora = 99.99</p>
+          <p>- 00042 > Featured / Star-Lord = 99.99</p>
+        </ol>
+      </aside>
+     </section>
+  
+  <nav>
+      <ul>
+        <li><a href="products.php">Check Products</a></li>
+        <li><a href="logginPage.html">Log out</a></li>
+      </ul>
+    </nav>
+<!-- New product form END -->
+    <footer>
+        <p>Posted by: Erzana, Chris & Justin</p>
+        <p>Contact information: tscollectables@nowhere.com</p>
+        <p>&copy; T's Collectables. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

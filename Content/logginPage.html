@@ -1,0 +1,97 @@
+<!-- Log in page -->
+<html>
+    <head>
+        <title>Log in</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+<!-- Header -->
+  <header>
+    <h1 style="text-align:center; font-size: 40px;">
+        Tivan's Collectors Museum
+        </h1>
+    <h1 style="text-align:center; font-size: 20px;">
+        Welcome Travelers, A lot to see once
+        you have jumped in the spaceship!
+        Join us in the gallery of our Galaxy Heros, 
+        and take some products home with you!
+        </h1>
+  </header>
+    <section style= "text-align: center">
+        <aside>
+        <!-- This form takes in the username and password and gives it to loginProcess.php -->
+        <h1 style= "text-align: left">Please log in below:</h1>
+        <form action = "loginProcess.php" method = "post">
+            <table border = "0">
+                <tr>
+                    <td>Username: </td>
+                    <td align="center"><input type="text" name="username" size="10" maxlength="10"/></td>
+                </tr>
+                 <tr>
+                    <td>Password: </td>
+                    <td align="left"><input type="password" name="password" size="10" maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Log in"/></td>
+                </tr>
+            </table>
+        </form>
+        <h1 style= "text-align: left">Create a new account below:</h1>
+        <form action = "newUser.php" method = "post">
+            <table border = "0">
+                <tr>
+                    <td>First Name: </td>
+                    <td align="center"><input type="text" name="firstName" size="10" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td align="center"><input type="text" name="lastName" size="10" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Username: </td>
+                    <td align="center"><input type="text" name="username" size="10" maxlength="10"/></td>
+                </tr>
+                 <tr>
+                    <td>Password: </td>
+                    <td align="left"><input type="password" name="password" size="10" maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Log in"/></td>
+                </tr>
+            </table>
+        </form>
+        <h1 style= "text-align: left">Create a new employee account below:</h1>
+        <form action = "newEmployee.php" method = "post">
+            <table border = "0">
+                <tr>
+                    <td>First Name: </td>
+                    <td align="center"><input type="text" name="firstName" size="10" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td align="center"><input type="text" name="lastName" size="10" maxlength="30"/></td>
+                </tr>
+                <tr>
+                    <td>Username: </td>
+                    <td align="center"><input type="text" name="username" size="10" maxlength="10"/></td>
+                </tr>
+                 <tr>
+                    <td>Password: </td>
+                    <td align="left"><input type="password" name="password" size="10" maxlength="10"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Log in"/></td>
+                </tr>
+            </table>
+        </form>
+      </aside>
+     </section>
+  <footer>
+    <p>Posted by: Erzana, Chris & Justin</p>
+    <p>Contact information: tscollectables@nowhere.com</p>
+    <p>&copy; T's Collectables. All rights reserved.</p>
+  </footer>
+
+    </body>
+</html>

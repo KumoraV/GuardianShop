@@ -1,0 +1,118 @@
+<!-- Home page for the store -->
+<html>
+<head>
+  <title>T's Collectables - Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+<!-- Header -->
+  <header>
+    <h1 style="text-align:center; font-size: 40px;">
+        Tivan's Collectors Museum
+        </h1>
+    <h1 style="text-align:center; font-size: 30px;">
+        Collections that are out of this world!
+        </h1>
+    <nav>
+      <ul>
+        <li><a href="#PlayTrack1!">Play 1st Track!</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="cart.php">Cart</a></li>
+        <li><a href="pastOrder.php">Previous Purchases</a></li>
+        <li><a href="logginPage.html">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- This form takes an input from the user of either a category or a character.
+     Then gives the value to itemSearch.php -->
+        <form action = "itemSearch.php" method = "post">  
+          <table>
+              <tr>
+                    <th>
+                    <select name="type">
+                    <option value="Category">Category</option>
+                    <option value="CharacterName">Guardian</option>
+                    </select>
+                    </th>
+                    <th>Search:</th>
+                    <th align="left"><input type="text" name="search" size="40" maxlength="40"/></th>
+                </tr>
+          </table>
+        </form> 
+    <img style="width:100%; height:500px;" src="gotg2.png" alt="gotg2">
+<!-- Main Content -->
+  <main>
+    <h2>Hottest Featured Products:</h2>
+    <p>Hurry! Exclusively At Collector's Museum Online Gift Shop!</p>
+
+    <section>
+      <h3>1) Groot Action Figure</h3>
+      <p>--- Introducing the adorable and lovable Groot action figure from 
+      Guardians of the Galaxy! With detailed craftsmanship and movable limbs, 
+      this miniature tree-like hero brings the magic of the Marvel universe to life, 
+      allowing fans to recreate their favorite scenes and embark on epic intergalactic 
+      adventures.</p>
+      <h3>2) Power Infinity Stone Necklace</h3>
+      <p>--- The Power Infinity Stone Necklace from Guardians of the Galaxy is a 
+      stunning accessory that channels the raw energy of the universe. Crafted 
+      with exquisite detail, this necklace features a glowing replica of the 
+      Power Stone, granting the wearer unimaginable power and control over energy 
+      itself.</p>
+      <h3>3) Peter Quill's Walkman Necklace</h3>
+      <p>--- Introducing Peter Quill's Walkman Necklace, a remarkable fusion 
+      of nostalgia and cutting-edge technology. This wearable masterpiece not 
+      only captures the iconic design of Star-Lord's Walkman from Guardians of 
+      the Galaxy but also boasts a built-in music player that lets you groove 
+      to the epic tunes of the film with a simple touch.</p>
+    </section>
+  </main>
+        
+
+     <section>
+          <aside>
+        <h2>Meet Thy Characters:</h2>
+        <ol>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d96cjJhvlMA?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          <li>Drax the Destroyer</li>
+          <li>Gamora</li>
+          <li>Rocket Raccoon</li>
+          <li>Groot</li>
+          <li>Peter Jason Quill/Star-Lord</li>
+        </ol>
+      </aside>
+     </section>
+      <section id="about">
+          <h2>Learn About The CEO:</h2>
+          <p>Taneleer Tivan, also known as The Collector, 
+          found solace in the ruins of his museum on Knowhere following the 
+          catastrophic power stone explosion. Determined to rebuild his collection, 
+          he embarked on a new journey, creating his own collectibles. 
+          Driven by a desire to preserve the rare and unique artifacts 
+          scattered across the universe, he sought to establish a collection 
+          that would rival any other, a testament to his unwavering passion for 
+          the extraordinary and the enigmatic.</p>
+        </section>
+
+<!-- Three gifs to make the site look better -->
+        <table>
+            <tr>
+                <th><img style="width:300px; height:300px;" src="grootDancing.gif" alt= "grootDancing"></th>
+                <th><img style="width:400px; height:300px;" src="crewWalkingDown.gif" alt="crewWalkingDown"></th>
+                <th><img style="width:300px; height:300px;" src="rocketWinking.gif" alt="rocketWinking"></th>
+            </tr>
+        </table>
+    <section id="PlayTrack1!">
+        <p>Track 1: Blue Swede - Hooked on a Feeling</p>
+        <audio controls src="1. Blue Swede - Hooked on a Feeling.mov"></audio>
+    </section>
+<!-- Footer -->
+  <footer>
+    <p>Posted by: Erzana, Chris & Justin</p>
+    <p>Contact information: tscollectables@nowhere.com</p>
+    <p>&copy; T's Collectables. All rights reserved.</p>
+  </footer>
+</body>
+</html>
