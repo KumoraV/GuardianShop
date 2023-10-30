@@ -15,7 +15,7 @@
         <li><a href="home.html">Home</a></li>
         <li><a href="products.php">Shop Some More!</a></li>
         <li><a href="pastOrder.php">Past Order</a></li>
-        <li><a href="logginPage.html">Log out</a></li>
+        <li><a href="index.html">Log out</a></li>
       </ul>
     </nav>
   </header>
